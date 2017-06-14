@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_headerLayout" format="reference" />
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color" />
+
+        <attr name="dddividerColor" format="color" />
+
+        <attr name="ddtextSelectedColor" format="color" />
+
+        <attr name="ddtextUnselectedColor" format="color" />
+
+        <attr name="ddmenuBackgroundColor" format="color" />
+
+        <attr name="ddmaskColor" format="color" />
+
+        <attr name="ddmenuTextSize" format="dimension" />
+
+        <attr name="ddmenuSelectedIcon" format="reference" />
+
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+
+        <attr name="ddmenuMenuHeightPercent" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="NiceSpinner">
+
+        <attr name="arrowTint" format="color" />
+
+        <attr name="hideArrow" format="boolean" />
+
+        <attr name="backgroundSelector" format="integer" />
+
+        <attr name="textTint" format="color|reference" />
+
+    </declare-styleable>
+</resources>

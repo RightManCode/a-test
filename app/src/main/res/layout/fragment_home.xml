@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700px">
+                    <!--android:layout_height="861px">-->
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/bg_half_translate"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="70px"
+                            android:layout_height="70px"
+                            android:paddingBottom="10px"
+                            android:paddingLeft="10px"
+                            android:paddingTop="10px"
+                            android:src="@drawable/ic_action_speak" />
+
+                        <com.wishland.www.wanhaohuimaterialdesign.ui.customeView.MarqueeTextView
+                            android:id="@+id/tv_marquee"
+                            android:layout_width="match_parent"
+                            android:layout_height="70px"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="40px"
+                            tools:text="hahahahahha" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:elevation="@dimen/elevation2"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10px"
+                    android:paddingTop="10px">
+
+                    <FrameLayout
+                        android:id="@+id/btn_register"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_btn1"
+                                android:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的收藏"
+                                android:textSize="40px" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/btn_favorable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_btn3"
+                                android:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优惠活动"
+                                android:textSize="40px" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/btn_custom_service2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clipChildren="false"
+
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:clipChildren="false">
+
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="60px"
+                                    android:layout_height="60px"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/home_btn4"
+                                    android:tint="@color/colorAccent" />
+
+                                <TextView
+                                    android:id="@+id/tv_message_num"
+                                    android:layout_width="30px"
+                                    android:layout_height="30px"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="-10px"
+                                    android:background="@drawable/bg_circle_red"
+                                    android:fitsSystemWindows="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="23px"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的信息"
+                                android:textSize="40px" />
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_login"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_btn2"
+                                android:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="立即登录"
+                                android:textSize="40px" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="214px"
+                    android:layout_height="105px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50px"
+                    android:src="@drawable/hotgame"
+                    android:tint="@color/colorAccent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:orientation="vertical"
+                    android:paddingBottom="200px" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

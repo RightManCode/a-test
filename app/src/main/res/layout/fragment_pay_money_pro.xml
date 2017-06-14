@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/srl"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <com.cpoopc.scrollablelayoutlib.ScrollableLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50px">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical">
+
+                        <View
+                            android:id="@+id/fl_halo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/bg_head" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                            android:id="@+id/iv_head"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/head"
+                            app:hasBorder="false" />
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/bootstrap_h3_text_size"
+                            tools:text="textjishu" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的钱包:"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/bootstrap_h5_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/bootstrap_h5_text_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/ctl"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/colorAccent"
+                app:tl_iconVisible="false"
+                app:tl_indicator_width="20dp"
+                app:tl_textBold="SELECT"
+                app:tl_textsize="14sp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.cpoopc.scrollablelayoutlib.ScrollableLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black_CC"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_gravity="center"
+                android:layout_margin="100px"
+                android:background="@drawable/bg_frame_accent"
+                android:text="立 即 登 陆"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</com.zhy.autolayout.AutoFrameLayout>

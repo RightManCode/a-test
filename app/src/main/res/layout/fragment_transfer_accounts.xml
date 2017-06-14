@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="100px">
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <View
+                            android:id="@+id/fl_halo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/bg_head" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/head"
+                            app:hasBorder="false" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="100px"
+                        android:layout_marginBottom="-90px"
+                        android:layout_marginTop="-30px"
+                        android:background="@color/text_primary" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/coner"
+                        app:cardElevation="@dimen/elevation2"
+                        app:cardMaxElevation="@dimen/elevation3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="100px">
+
+
+                            <com.wishland.www.wanhaohuimaterialdesign.ui.customeView.spinner.NiceSpinner
+                                android:id="@+id/ns_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/normal_h"
+                                app:textTint="@color/text_primary" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/black" />
+
+                            <ImageView
+                                android:layout_width="104px"
+                                android:layout_height="47px"
+                                android:layout_marginTop="80px"
+                                android:src="@drawable/exchange" />
+
+                            <com.wishland.www.wanhaohuimaterialdesign.ui.customeView.spinner.NiceSpinner
+                                android:id="@+id/ns_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/normal_h"
+                                android:layout_marginTop="80px"
+                                app:textTint="@color/text_primary" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/black" />
+
+                            <EditText
+                                android:id="@+id/et_edit_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/normal_h"
+                                android:layout_marginTop="80px"
+                                android:background="@drawable/bg_frame_accent"
+                                android:elevation="@dimen/elevation1"
+                                android:gravity="center"
+                                android:hint="输入转账金额"
+                                android:inputType="number"
+                                android:textColor="@color/text_primary"
+                                android:textColorHint="@color/colorAccent" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btn_transfer_account"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_margin="@dimen/elevation4"
+                        android:elevation="@dimen/elevation2"
+                        android:src="@drawable/ic_action_ok" />
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black_CC"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_gravity="center"
+                android:layout_margin="100px"
+                android:background="@drawable/bg_frame_accent"
+                android:text="立 即 登 陆"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!--<item name="android:windowBackground">@drawable/bg_app</item>-->
+    </style>
+
+    <style name="TranslateBackground" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Toolbar" />
+
+    <style name="Text.Toolbar.Title">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">60px</item>
+    </style>
+
+    <style name="MyCheckBox" />
+
+    <style name="MyCheckBox.login" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:maxHeight">5.0dip</item>
+    </style>
+</resources>

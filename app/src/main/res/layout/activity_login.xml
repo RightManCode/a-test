@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wishland.www.wanhaohuimaterialdesign.ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="50px"
+        android:paddingRight="50px">
+
+        <FrameLayout
+            android:layout_marginTop="200px"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <View
+                android:id="@+id/fl_halo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_head" />
+
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/head"
+                app:hasBorder="false" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="60px"
+            android:background="@drawable/bg_gray_coner">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/login2" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="用户名"
+                android:maxLines="1"
+                android:padding="20px"
+                android:textSize="48px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/login1" />
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="20px"
+                android:textSize="48px" />
+
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px">
+
+            <com.bigmercu.cBox.CheckBox
+                android:id="@+id/cb_remenber_me"
+                android:layout_width="300px"
+                android:layout_height="80px"
+                app:check_text="记住我"
+                app:show_border="true"
+                app:color_after="@color/colorPrimary"
+                app:color_before="@color/colorAccent"
+                app:check_style="hook"
+                android:textSize="20dp"
+                app:is_circle_border="false"/>
+
+            <TextView
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="注册会员"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_submit_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:elevation="@dimen/elevation4"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/elevation4"
+            android:background="@drawable/bg_accent"
+            android:text="立 即 登 陆" />
+    </LinearLayout>
+</ScrollView>

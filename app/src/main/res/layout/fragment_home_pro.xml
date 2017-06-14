@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/elevation3">
+
+
+        <ImageButton
+            android:id="@+id/btn_custom_service"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="30px"
+            android:background="@drawable/custom_service" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Text.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="首页" />
+
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:elevation="@dimen/elevation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="700px">
+                    <!--android:layout_height="861px">-->
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.wishland.www.wanhaohuimaterialdesign.ui.customeView.MarqueeTextView
+                        android:id="@+id/tv_marquee"
+                        android:layout_width="match_parent"
+                        android:layout_height="70px"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/bg_half_translate"
+                        android:drawableLeft="@drawable/ic_action_speak"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="40px"
+                        tools:text="hahahahahha" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:orientation="vertical"
+                    android:paddingBottom="200px" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

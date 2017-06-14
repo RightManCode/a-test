@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wishland.www.wanhaohuimaterialdesign.ui.customeView.CustomExpandableListView
+            android:id="@+id/cel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black_CC"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_submit_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_gravity="center"
+            android:layout_margin="100px"
+            android:background="@drawable/bg_frame_accent"
+            android:text="立 即 登 陆"
+            android:textColor="@color/white" />
+    </FrameLayout>
+</FrameLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+
+    <!--<ScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center_horizontal"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:id="@+id/textView2"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="left"--><!--android:layout_marginBottom="50px"--><!--android:layout_marginLeft="50px"--><!--android:layout_marginTop="50px"--><!--android:text="支付码/Barcode Pay"--><!--android:textColor="@color/text_primary"--><!--android:textSize="45px" />-->
+
+
+    <!--<ImageView--><!--android:id="@+id/btn_weixin"--><!--android:layout_width="1000px"--><!--android:layout_height="500px"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/pay1" />-->
+
+
+    <!--<ImageView--><!--android:id="@+id/btn_zhifubao"--><!--android:layout_width="1000px"--><!--android:layout_height="500px"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/pay2" />-->
+
+
+    <!--<ImageView--><!--android:id="@+id/btn_bank_card"--><!--android:layout_width="1000px"--><!--android:layout_height="500px"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/pay3" />--><!--</LinearLayout>--><!--</ScrollView>-->
+
+
+    <!--</LinearLayout>-->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/coner"
+        app:cardElevation="@dimen/elevation2"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <TextView
+                android:id="@+id/tv_title_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/bootstrap_h3_text_size"
+                tools:text="不定期更换入款银行账号" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:textColor="@color/text_primary"
+                android:textSize="60px"
+                tools:text="尊敬的会员，您好，我司将不定期更换公司入款银行账号，每次公司入款前请查看最新的入款银行账号，避免存入到过期账号导致资金损失，谢谢。" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_hint"
+                    android:textSize="35px"
+                    tools:text="尊敬的会员" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/text_hint"
+                    android:textSize="35px"
+                    tools:text="2017-05-26 03:27:32" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_marginTop="50px"
+                android:background="@drawable/bg_accent"
+                android:elevation="@dimen/elevation4"
+                android:text="删 除 信 息"
+                android:textColor="@color/white" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

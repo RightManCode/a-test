@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wishland.www.wanhaohuimaterialdesign.ui.activity.TMActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="180px"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingTop="100px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="会员账号："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_tm_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="收款人姓名："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_tm_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="收款银行："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_tm_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="银行账号："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_tm_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="开户地址："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_tm_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="取款金额："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <EditText
+                android:id="@+id/et_tm_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"
+                android:paddingBottom="5px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="5px"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="1000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_gray_coner"
+            android:gravity="center_vertical"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="取款密码："
+                android:textColor="@color/text_primary"
+                android:textSize="50px" />
+
+            <EditText
+                android:id="@+id/et_tm_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:paddingBottom="5px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="5px"
+                android:textColor="@color/text_primary"
+                android:textSize="50px"
+                tools:text="testjishu" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_accent"
+            android:text="提   交" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:text="友情提示\n\t\t\t1.银行卡账户持有人姓名必须与注册时输入的姓名一致，否则无法申请退款。\n\t\t\t2.每位客户只可以使用一张银行卡进行提款，如需要更换银行卡请与客服人员联系；否则提款将被拒绝。\n\t\t\t3.为保障客户的资金安全，万·濠·会·澳·门·博·彩·协·会|联合打造有可能需要用户提供电话单，银行对账单或其它资料验证，以确保客户资金不会被冒领。"
+            android:textColor="@color/text_hint"
+            android:textSize="35px" />
+    </LinearLayout>
+</ScrollView>

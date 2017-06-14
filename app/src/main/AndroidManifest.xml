@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wishland.www.wanhaohuimaterialdesign">
+
+    <!-- Required permissions - Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Recommended permission - External memory pre-caching -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Optional permission - Location based ad targeting -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5930f7d9f29d986954001b82" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="1ae9962f07842dd73724a693c0862427" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="whh_material_design" />
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/FullScreen" />
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="立即登陆"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ui.activity.UserCenterActivity"
+            android:label="个人中心" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:label="立即注册" />
+        <activity android:name=".base.SuccessActivity" />
+        <activity
+            android:name=".ui.activity.EditTransactionRecordTimeActivity"
+            android:label="交易记录" />
+        <activity
+            android:name=".ui.activity.GameAdviceActivtiy"
+            android:label="游戏推荐" />
+        <activity
+            android:name=".ui.activity.MyLevelActivity"
+            android:label="我的等级" />
+        <activity
+            android:name=".ui.activity.MyCollectActivity"
+            android:label="我的收藏" />
+        <activity android:name=".ui.activity.SpecialOfferActivity" />
+        <activity
+            android:name=".ui.activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:process=":com.wishland.www.wanhaohuimaterialdesign"
+            android:theme="@style/TranslateBackground">
+            <intent-filter>
+                <action android:name="com.wishland.www.wanhaohuimaterialdesign.ui.activity.WebActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.EditBetRecordTimeActivity"
+            android:label="投注记录" />
+        <activity
+            android:name=".ui.activity.TransactionRecordActivtiy"
+            android:label="交易记录" />
+        <activity
+            android:name=".ui.activity.BetRecordActivity"
+            android:label="投注记录" />
+        <activity
+            android:name=".ui.activity.GameListActivity"
+            android:label="游戏列表" />
+        <activity
+            android:name=".ui.activity.ReEditPwActivity"
+            android:label="修改登录密码" />
+        <activity
+            android:name=".ui.activity.ReEditLoginActivity"
+            android:label="修改登录密码" />
+        <activity
+            android:name=".ui.activity.ReEditTransPwActivity"
+            android:label="修改交易密码" />
+        <activity android:name=".ui.activity.RecodeActivtiy" />
+        <activity
+            android:name=".ui.activity.TMActivity"
+            android:label="提现" />
+        <activity
+            android:name=".ui.activity.AccontBindActivity"
+            android:label="账户绑定" />
+        <activity
+            android:name=".ui.activity.MoreActivity"
+            android:label="优惠活动" />
+        <activity
+            android:name=".ui.activity.BankListActivity"
+            android:label="选择银行" />
+        <activity
+            android:name=".ui.activity.MessageActivity"
+            android:label="消息" />
+        <activity
+            android:name=".ui.activity.MessageDetailActivity"
+            android:label="消息详情" />
+        <activity
+            android:name=".ui.activity.MainActivityPro"
+            android:label="" />
+        <activity
+            android:name=".ui.activity.PayActivity"
+            android:label="充值" />
+        <activity
+            android:name=".ui.activity.AccountToAccountRecordActivtiy"
+            android:label="额度转换" />
+    </application>
+
+</manifest>

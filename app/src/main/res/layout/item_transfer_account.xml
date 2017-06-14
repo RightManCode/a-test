@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="10px"
+        android:visibility="gone"
+        android:src="@drawable/ic_action_check" />
+
+    <TextView
+        android:id="@+id/tv_transfer_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_primary"
+        tools:text="我的钱包\n\n1000">
+
+    </TextView>
+</com.zhy.autolayout.AutoFrameLayout>

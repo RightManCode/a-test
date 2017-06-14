@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wishland.www.wanhaohuimaterialdesign.base.SuccessActivity">
+
+    <ImageView
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:layout_marginTop="150px"
+        android:src="@drawable/succ" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成功提现 "
+            android:textColor="@color/text_primary"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="45px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 元!"
+            android:textColor="@color/text_primary"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_i_kown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_h"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="150px"
+        android:background="@drawable/bg_accent"
+        android:text="我知道了"
+        android:textColor="@color/white" />
+</LinearLayout>

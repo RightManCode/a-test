@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wishland.www.wanhaohuimaterialdesign.ui.activity.EditTransactionRecordTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tl_edit_transaction_record_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:padding="50px"
+            tl:tl_iconHeight="140px"
+            tl:tl_iconWidth="140px"
+            tl:tl_underline_height="0px" />
+
+
+        <LinearLayout
+            android:layout_marginTop="100px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="50px"
+                android:paddingLeft="50px"
+                android:text="开始时间:"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_start_year"
+                android:layout_width="400px"
+                android:layout_height="@dimen/normal_h"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:hint="年-月-日"
+                android:padding="10px"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_start_hour"
+                android:layout_width="110px"
+                android:layout_height="@dimen/normal_h"
+                android:layout_margin="20px"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="00"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_start_minute"
+                android:layout_width="110px"
+                android:layout_height="@dimen/normal_h"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="00"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="结束时间:"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_end_year"
+                android:layout_width="400px"
+                android:layout_height="@dimen/normal_h"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:hint="年-月-日"
+                android:padding="10px"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_end_hour"
+                android:layout_width="110px"
+                android:layout_height="@dimen/normal_h"
+                android:layout_margin="20px"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="23"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+
+            <TextView
+
+                android:id="@+id/tv_end_mimute"
+                android:layout_width="110px"
+                android:layout_height="@dimen/normal_h"
+                android:background="@drawable/bg_frame_grey"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="59"
+                android:textColor="@color/text_primary"
+                android:textSize="60px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_start_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/bg_accent"
+            android:text="开始查询"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

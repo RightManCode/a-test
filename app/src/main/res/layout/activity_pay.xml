@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="180px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px"
+            android:paddingTop="100px">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_marginTop="50px"
+                android:background="@drawable/bg_gray_coner"
+                android:gravity="center_vertical"
+                android:padding="20px">
+
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:text="会员账号："
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/tv_user_accont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px"
+                    tools:text="testjishu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_marginTop="50px"
+                android:background="@drawable/bg_gray_coner"
+                android:gravity="center_vertical"
+                android:padding="20px">
+
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:text="目前额度："
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/tv_pay_limite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px"
+                    tools:text="testjishu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_marginTop="50px"
+                android:background="@drawable/bg_gray_coner"
+                android:gravity="center_vertical"
+                android:padding="20px">
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:text="存款金额："
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px" />
+
+                <EditText
+                    android:id="@+id/et_pay_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="5px"
+                    android:textColor="@color/text_primary"
+                    android:textSize="50px"
+                    tools:text="1000" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_h"
+                android:layout_marginTop="50px"
+                android:background="@drawable/bg_accent"
+                android:text="提   交"
+                android:textColor="@color/white" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
