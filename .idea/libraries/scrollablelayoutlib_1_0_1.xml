@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="scrollablelayoutlib-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b33056fafa085da8a7e9aeaad251289359d471d9/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b33056fafa085da8a7e9aeaad251289359d471d9/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.cpoopc/scrollablelayoutlib/1.0.1/1b6eecc1de39e394a69f06c455bf64079a44c9a8/scrollablelayoutlib-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

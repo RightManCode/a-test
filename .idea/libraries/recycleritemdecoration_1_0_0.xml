@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="recycleritemdecoration-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/6c1c62f91bfc45d8d1459d5d79b4e27b1200a76b/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6c1c62f91bfc45d8d1459d5d79b4e27b1200a76b/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.dinuscxj/recycleritemdecoration/1.0.0/c57d76599ef8a711d031f6d2d31f2d6f7ecac98e/recycleritemdecoration-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
