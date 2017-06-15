@@ -107,16 +107,6 @@ public class MessageActivity extends BaseStyleActivity {
                 .params(NetUtils.getParamsPro(map))
                 .execute(new AbsCallbackPro() {
 
-                    @Override
-                    public void onBefore(BaseRequest request) {
-                        super.onBefore(request);
-
-                    }
-
-                    @Override
-                    public void onError(Call call, Response response, Exception e) {
-
-                    }
 
                     @Override
                     public void onAfter(String s, Exception e) {

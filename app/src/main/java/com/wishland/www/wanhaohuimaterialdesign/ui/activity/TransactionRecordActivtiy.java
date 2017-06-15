@@ -117,16 +117,7 @@ public class TransactionRecordActivtiy extends BaseStyleActivity {
                 .params(NetUtils.getParamsPro(map))
                 .tag(this)
                 .execute(new AbsCallbackPro() {
-                    @Override
-                    public void onBefore(BaseRequest request) {
-                        super.onBefore(request);
 
-                    }
-
-                    @Override
-                    public void onError(Call call, Response response, Exception e) {
-
-                    }
 
                     @Override
                     public void onAfter(String s, Exception e) {

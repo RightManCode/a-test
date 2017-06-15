@@ -42,7 +42,7 @@ import okhttp3.Response;
  * Created by gerry on 2017/5/1.
  */
 
-public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.ScrollableContainer{
+public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.ScrollableContainer {
     @BindView(R.id.srl)
     SwipeRefreshLayout srl;
     Unbinder unbinder;
@@ -203,7 +203,7 @@ public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.S
         public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
             GroupHolder groupholder;
             if (view == null) {
-                view = LayoutInflater.from(mContext).inflate(R.layout.item_pay_type, null);
+                view = LayoutInflater.from(mContext).inflate(R.layout.item_pay_type, viewGroup, false);
                 groupholder = new GroupHolder(view);
                 view.setTag(groupholder);
             } else {
@@ -218,7 +218,7 @@ public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.S
         public View getChildView(final int i, final int i1, boolean b, View view, final ViewGroup viewGroup) {
             ChildHolder childholder;
             if (view == null) {
-                view = LayoutInflater.from(mContext).inflate(R.layout.item_pay_type_content, null);
+                view = LayoutInflater.from(mContext).inflate(R.layout.item_pay_type_content, viewGroup, false);
                 childholder = new ChildHolder(view);
                 view.setTag(childholder);
             } else {
@@ -234,7 +234,7 @@ public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.S
                     switch (type) {
                         case "url":
                             intent = new Intent(getActivity(), WebActivity.class);
-                            intent.putExtra("url",payListBean.getUrl());
+                            intent.putExtra("url", payListBean.getUrl());
                             break;
                         case "data":
                             String url = payListBean.getUrl().replace("[para]", payListBean.getItem().get(i1).getPara());
@@ -260,6 +260,7 @@ public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.S
             ImageView ivPay;
             @BindView(R.id.btn_pay_type_content)
             TextView btnPayTypeContent;
+
             ChildHolder(View view) {
                 ButterKnife.bind(this, view);
             }
@@ -270,6 +271,7 @@ public class PayMoneyFragment extends BaseFragment implements ScrollableHelper.S
             ImageView ivPayTypeTitle;
             @BindView(R.id.tv_pay_type_title)
             TextView tvPayTypeTitle;
+
             GroupHolder(View view) {
                 ButterKnife.bind(this, view);
             }

@@ -212,10 +212,6 @@ public class HomeFragmentPro extends BaseFragment {
                 .params(NetUtils.getParamsPro())
                 .tag(this)
                 .execute(new AbsCallbackPro() {
-                    @Override
-                    public void onBefore(BaseRequest request) {
-                        super.onBefore(request);
-                    }
 
                     @Override
                     public void onAfter(String s, Exception e) {

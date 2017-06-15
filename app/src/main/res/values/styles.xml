@@ -29,8 +29,6 @@
         <item name="android:textSize">60px</item>
     </style>
 
-    <style name="MyCheckBox" />
-
     <style name="MyCheckBox.login" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@drawable/checkbox_selector</item>
         <item name="android:paddingLeft">15dp</item>

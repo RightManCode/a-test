@@ -1,7 +1,6 @@
 package com.wishland.www.wanhaohuimaterialdesign.ui.customeView.spinner;
 
 import android.content.Context;
-import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,9 +35,7 @@ public abstract class NiceSpinnerBaseAdapter<T> extends BaseAdapter {
             convertView = View.inflate(mContext, R.layout.spinner_list_item, null);
             textView = (TextView) convertView.findViewById(R.id.tv_tinted_spinner);
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                textView.setBackground(ContextCompat.getDrawable(mContext, mBackgroundSelector));
-            }
+            textView.setBackground(ContextCompat.getDrawable(mContext, mBackgroundSelector));
 
             convertView.setTag(new ViewHolder(textView));
         } else {

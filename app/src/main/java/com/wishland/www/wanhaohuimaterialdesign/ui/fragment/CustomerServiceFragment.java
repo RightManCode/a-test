@@ -83,9 +83,7 @@ public class CustomerServiceFragment extends BaseFragment {
         settings.setDisplayZoomControls(false);
 
         // Enable remote debugging via chrome://inspect
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            WebView.setWebContentsDebuggingEnabled(true);
-        }
+        WebView.setWebContentsDebuggingEnabled(true);
         webview.setDownloadListener(new DownloadListener() {
             @Override
             public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {

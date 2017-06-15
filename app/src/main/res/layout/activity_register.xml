@@ -158,7 +158,6 @@
             android:background="@drawable/bg_gray_coner">
 
             <ImageView
-                android:id="@+id/imageView11"
                 android:layout_width="60px"
                 android:layout_height="60px"
                 android:layout_gravity="center_vertical"

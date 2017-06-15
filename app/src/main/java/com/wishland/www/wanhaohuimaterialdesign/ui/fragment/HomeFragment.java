@@ -262,10 +262,6 @@ public class HomeFragment extends BaseFragment {
                 .params(NetUtils.getParamsPro())
                 .tag(this)
                 .execute(new AbsCallbackPro() {
-                    @Override
-                    public void onBefore(BaseRequest request) {
-                        super.onBefore(request);
-                    }
 
                     @Override
                     public void onAfter(String s, Exception e) {
@@ -323,16 +319,16 @@ public class HomeFragment extends BaseFragment {
                 startActivity(intent2);
                 break;
             case R.id.btn_register:
+                if (!UserHandler.isLogin()) {
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                    return;
+                }
                 startActivity(new Intent(getActivity(), MyCollectActivity.class));
                 break;
             case R.id.btn_login:
                 startActivity(new Intent(getActivity(), LoginActivity.class));
                 break;
             case R.id.btn_favorable:
-                if (!UserHandler.isLogin()) {
-                    startActivity(new Intent(getActivity(), LoginActivity.class));
-                    return;
-                }
                 startActivity(new Intent(getActivity(), MoreActivity.class));
                 break;
             default:

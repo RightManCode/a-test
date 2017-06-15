@@ -234,7 +234,8 @@
                 android:id="@+id/iv_verification_code"
                 android:layout_width="280px"
                 android:layout_height="80px"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                tools:ignore="ContentDescription" />
 
             <ImageButton
                 android:id="@+id/btn_refresh_verification_code"
@@ -242,7 +243,8 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="20px"
-                android:background="@drawable/ic_action_refresh" />
+                android:background="@drawable/ic_action_refresh"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 

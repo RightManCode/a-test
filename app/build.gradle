@@ -7,7 +7,8 @@ android {
     defaultConfig {
         applicationId "com.wishland.www.wanhaohuimaterialdesign"
         minSdkVersion 21
-        targetSdkVersion 25
+        targetSdkVersion 26
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -74,4 +75,5 @@ dependencies {
     compile 'com.github.cpoopc:scrollablelayoutlib:1.0.1'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.android.support:multidex:1.0.1'
 }

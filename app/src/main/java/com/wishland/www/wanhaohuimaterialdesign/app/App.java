@@ -1,6 +1,6 @@
 package com.wishland.www.wanhaohuimaterialdesign.app;
 
-import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.beardedhen.androidbootstrap.TypefaceProvider;
@@ -22,7 +22,7 @@ import static anetwork.channel.download.DownloadManager.TAG;
 /**
  * Created by gerry on 2016/8/2.
  */
-public class App extends Application {
+public class App extends MultiDexApplication {
     private static App instance;
 
     public static synchronized App getInstance() {

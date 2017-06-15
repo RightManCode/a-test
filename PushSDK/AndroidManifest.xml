@@ -153,6 +153,7 @@
             android:name="com.umeng.message.provider.MessageProvider"
             android:authorities="${applicationId}.umeng.message"
             android:exported="false">
+            <!--suppress AndroidElementNotAllowed -->
             <grant-uri-permission android:pathPattern=".*" />
         </provider>
 

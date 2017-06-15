@@ -94,7 +94,7 @@ public class ExpandableLayoutItem extends RelativeLayout {
                 return isOpened() && event.getAction() == MotionEvent.ACTION_DOWN;
             }
         });
-
+        typedArray.recycle();
     }
 
     private void expand(final View v) {

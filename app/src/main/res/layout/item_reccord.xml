@@ -51,6 +51,7 @@
             tools:text="金额：10.00" />
 
         <LinearLayout
+            android:baselineAligned="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -72,7 +73,6 @@
                     tools:text="手续费：0.100" />
 
                 <TextView
-                    android:id="@+id/tv_record7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
