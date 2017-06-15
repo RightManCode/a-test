@@ -108,11 +108,11 @@
                 app:is_circle_border="false"/>
 
             <TextView
-                android:id="@+id/btn_register"
+                android:id="@+id/tv_forgot_pw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
-                android:text="注册会员"
+                android:text="忘记密码"
                 android:textColor="@color/colorAccent"
                 android:textSize="15dp" />
         </FrameLayout>
@@ -127,5 +127,16 @@
             android:layout_margin="@dimen/elevation4"
             android:background="@drawable/bg_accent"
             android:text="立 即 登 陆" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_h"
+            android:layout_marginTop="50px"
+            android:elevation="@dimen/elevation4"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="@dimen/elevation4"
+            android:background="@drawable/bg_frame_accent"
+            android:text="注 册 会 员" />
     </LinearLayout>
 </ScrollView>

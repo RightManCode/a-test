@@ -123,7 +123,10 @@ public class LoginActivity extends BaseStyleActivity {
     }
 
 
-    @OnClick({R.id.btn_submit_login, R.id.btn_register})
+    @OnClick({R.id.btn_submit_login,
+            R.id.btn_register,
+            R.id.tv_forgot_pw
+    })
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_submit_login:
@@ -132,6 +135,11 @@ public class LoginActivity extends BaseStyleActivity {
             case R.id.btn_register:
                 startActivity(new Intent(this, RegisterActivity.class));
                 finish();
+                break;
+            case R.id.tv_forgot_pw:
+                Intent intent = new Intent(this, WebActivity.class);
+                intent.putExtra("url", Api.CUSTOMER_SERVICES);
+                startActivity(intent);
                 break;
         }
     }
