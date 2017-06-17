@@ -24,9 +24,9 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.lzy.okgo.OkGo;
-import com.lzy.okgo.request.BaseRequest;
 import com.wishland.www.wanhaohuimaterialdesign.R;
 import com.wishland.www.wanhaohuimaterialdesign.base.BaseFragment;
 import com.wishland.www.wanhaohuimaterialdesign.model.bean.Index;
@@ -262,7 +262,6 @@ public class HomeFragment extends BaseFragment {
                 .params(NetUtils.getParamsPro())
                 .tag(this)
                 .execute(new AbsCallbackPro() {
-
                     @Override
                     public void onAfter(String s, Exception e) {
                         super.onAfter(s, e);
@@ -271,11 +270,20 @@ public class HomeFragment extends BaseFragment {
 
                     @Override
                     public void onSuccess(String s, Call call, Response response) {
-                        index = new Gson().fromJson(s, new TypeToken<Index>() {
-                        }.getType());
-                        tvMarquee.setText(index.getAdsTitle().getTitle());
-                        initMenu();
-                        initBanner();
+                        try {
+                            index = new Gson().fromJson(s, new TypeToken<Index>() {
+                            }.getType());
+                            if (index != null) {
+                                if (index.getTopBanner() != null)
+                                    initBanner();
+                                if (index.getTopGame() != null)
+                                    initMenu();
+                                if (index.getAdsTitle() != null & index.getAdsTitle().getTitle() != null)
+                                    tvMarquee.setText(index.getAdsTitle().getTitle());
+                            }
+                        } catch (JsonSyntaxException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
     }

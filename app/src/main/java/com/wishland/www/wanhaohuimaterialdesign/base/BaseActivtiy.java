@@ -22,14 +22,19 @@ public abstract class BaseActivtiy extends AutoLayoutActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
-        initVariable();
-        super.onCreate(savedInstanceState);
-        initDate();
-        setupWindowAnimations();
-        PushAgent.getInstance(context).onAppStart();
+        try {
+            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+            initVariable();
+            super.onCreate(savedInstanceState);
+            initDate();
+            setupWindowAnimations();
+            PushAgent.getInstance(context).onAppStart();
+        } catch (Exception e) {
+            e.printStackTrace();
+            finish();
+        }
     }
 
     protected void setupWindowAnimations() {

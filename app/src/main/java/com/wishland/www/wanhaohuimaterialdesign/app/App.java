@@ -4,7 +4,7 @@ import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.beardedhen.androidbootstrap.TypefaceProvider;
-import com.facebook.drawee.backends.pipeline.Fresco;
+//import com.facebook.drawee.backends.pipeline.Fresco;
 import com.flurry.android.FlurryAgent;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
@@ -32,7 +32,7 @@ public class App extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Fresco.initialize(this);
+//        Fresco.initialize(this);
         new FlurryAgent.Builder()
                 .withLogEnabled(true)
                 .build(this, "DNG4WTFYWJXV3W59RPRN");

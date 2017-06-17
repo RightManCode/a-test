@@ -15,13 +15,21 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initVariable();
+        try {
+            initVariable();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initDate();
+        try {
+            initDate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     protected abstract void initVariable();
